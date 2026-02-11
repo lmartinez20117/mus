@@ -1,14 +1,27 @@
+let canço1 = new Audio("./morado.mp3")
+let canço2 = new Audio("./francisco.mp3")
+let canço3 = new Audio("./bb.mp3")
+
 document.getElementById("Musica 1").addEventListener("click",function(){
-    let canço = new Audio("./morado.mp3")
-    canço.play();
+
+    canço1.play();
 })
 document.getElementById("Musica 2").addEventListener("click",function(){
-    let canço = new Audio("./francisco.mp3")
-    canço.play();
+
+    canço2.play();
 })
 document.getElementById("Musica 3").addEventListener("click",function(){
-    let canço = new Audio("./bb.mp3")
-    canço.play();
+
+    canço3.play();
+})
+document.getElementById("Stop1").addEventListener("click",function(){
+    canço1.pause();
+})
+document.getElementById("Stop2").addEventListener("click",function(){
+    canço2.pause();
+})
+document.getElementById("Stop3").addEventListener("click",function(){
+    canço3.pause();
 })
 
 document.addEventListener("keydown",function (e){
