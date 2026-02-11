@@ -1,0 +1,32 @@
+/* Fondo general */
+body {
+    background-color: #f8c8dc; /* rosa pastel */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botones */
+button {
+    background-color: #fff1a8; /* amarillo pastel */
+    color: #333;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover para que se vea mono */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Opcional: botones deshabilitados */
+button:disabled {
+    background-color: #f3e7b3;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
