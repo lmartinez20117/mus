@@ -1,0 +1,40 @@
+/* Fondo general */
+body {
+    background-color: #f8c8dc; /* rosa pastel */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ocupa toda la pantalla */
+    flex-direction: column; /* uno debajo del otro */
+}
+
+/* Botones */
+button {
+    background-color: #fff1a8; /* amarillo pastel */
+    color: #333;
+    border: none;
+    padding: 18px 35px; /* más grandes */
+    border-radius: 12px; /* un poco más redondeados */
+    cursor: pointer;
+    font-size: 20px; /* texto más grande */
+    margin: 10px; /* espacio entre botones */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover para que se vea mono */
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones deshabilitados */
+button:disabled {
+    background-color: #f3e7b3;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
